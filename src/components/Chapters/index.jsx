@@ -4,7 +4,7 @@ import SChapters from './style';
 const Chapters = ({ id, text }) => {
   return (
     <SChapters>
-      <h2 className="h2-chapters">{id}</h2>
+      <h2 className="h2-chapters">Chapitre {id}</h2>
       <p className="p-chapters">{text}</p>
     </SChapters>
   );
