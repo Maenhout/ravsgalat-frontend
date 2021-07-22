@@ -1,9 +1,9 @@
-import SampleComponent from './components/SampleComponent';
+import Chapters from './components/Chapters';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Chapters />
     </div>
   );
 }
