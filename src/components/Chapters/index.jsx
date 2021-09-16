@@ -1,18 +1,11 @@
-import PropTypes from 'prop-types';
 import SChapters from './style';
 
-const Chapters = ({ id, text }) => {
+const Chapters = () => {
   return (
     <SChapters>
-      <h2>Chapitre {id}</h2>
-      <p>{text}</p>
+      <h2>Chapitre</h2>
     </SChapters>
   );
 };
 
 export default Chapters;
-
-Chapters.propTypes = {
-  id: PropTypes.number.isRequired,
-  text: PropTypes.string.isRequired,
-};

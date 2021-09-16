@@ -1,9 +1,9 @@
-import Adventure from './pages/Adventure';
+import Choices from './components/Choices';
 
 function App() {
   return (
     <div className="App">
-      <Adventure />
+      <Choices />
     </div>
   );
 }

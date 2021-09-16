@@ -1,16 +1,27 @@
-import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import SChoices from './style';
 
-const Choices = ({ text }) => {
+function Choices() {
+  const [choices, setChoices] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5050/choices/1').then(({ data }) => {
+      console.log(data);
+      setChoices(data);
+    });
+  }, []);
+
   return (
     <SChoices>
-      <p>{text}</p>
+      <h2>Choices</h2>
+      <ul>
+        {choices.map(() => {
+          return <li>hello</li>;
+        })}
+      </ul>
     </SChoices>
   );
-};
+}
 
 export default Choices;
-
-Choices.propTypes = {
-  text: PropTypes.string.isRequired,
-};
