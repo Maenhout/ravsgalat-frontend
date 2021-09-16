@@ -4,7 +4,7 @@ import SChoices from './style';
 const Choices = ({ text }) => {
   return (
     <SChoices>
-      <p className="p-choices">{text}</p>
+      <p>{text}</p>
     </SChoices>
   );
 };
