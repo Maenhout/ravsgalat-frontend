@@ -1,9 +1,9 @@
-import Chapters from './components/Chapters';
+import Adventure from './pages/Adventure';
 
 function App() {
   return (
     <div className="App">
-      <Chapters />
+      <Adventure />
     </div>
   );
 }
