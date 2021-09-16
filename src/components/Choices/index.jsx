@@ -9,8 +9,8 @@ const Choices = ({ text }) => {
   );
 };
 
+export default Choices;
+
 Choices.propTypes = {
   text: PropTypes.string.isRequired,
 };
-
-export default Choices;

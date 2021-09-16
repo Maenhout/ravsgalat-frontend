@@ -10,9 +10,9 @@ const Chapters = ({ id, text }) => {
   );
 };
 
+export default Chapters;
+
 Chapters.propTypes = {
   id: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
 };
-
-export default Chapters;
